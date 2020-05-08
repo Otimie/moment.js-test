@@ -8,10 +8,10 @@
 			let opening = moment.tz('9:00am', 'h:mma', "Pacific/Auckland")
 			let closing = moment.tz('5:00pm', 'h:mma', "Pacific/Auckland")
 			//Pacific/Auckland
-			console.log(moment().tz("Pacific/Auckland").day());
+			console.log(moment.tz("Pacific/Auckland").day());
 			
-			console.log(moment().tz("Pacific/Auckland").hour());
-			console.log(moment().tz("Pacific/Auckland").minutes());
+			console.log(moment.tz("Pacific/Auckland").hour());
+			console.log(moment.tz("Pacific/Auckland").minutes());
 			
 			console.log(moment.tz("Pacific/Auckland").isBetween(opening, closing));
 		</script>
