@@ -4,10 +4,16 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.min.js" integrity="sha256-C66CaAImteEKZPYvgng9j10J/45e9sAuZyfPYCwp4gE=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data-1970-2030.min.js" integrity="sha256-ob9GYTF6HJFUyVtlWivU47nga6eeRR3Lti9VfUeFhBI=" crossorigin="anonymous"></script>
 		<script>
+			
+			let opening = moment('9:00am', 'h:mma')
+			let closing = moment('5:00pm', 'h:mma')
 			//Pacific/Auckland
 			console.log(moment().tz("Pacific/Auckland").day());
+			
 			console.log(moment().tz("Pacific/Auckland").hour());
 			console.log(moment().tz("Pacific/Auckland").minutes());
+			
+			console.log(moment().tz("Pacific/Auckland").isBetween(opening, closing));
 		</script>
 	</head>
 	<body>
