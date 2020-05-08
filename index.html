@@ -5,8 +5,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data-1970-2030.min.js" integrity="sha256-ob9GYTF6HJFUyVtlWivU47nga6eeRR3Lti9VfUeFhBI=" crossorigin="anonymous"></script>
 		<script>
 			
-			let opening = moment('9:00am', 'h:mma')
-			let closing = moment('5:00pm', 'h:mma')
+			let opening = moment.tz('9:00am', 'h:mma', "Pacific/Auckland")
+			let closing = moment.tz('5:00pm', 'h:mma', "Pacific/Auckland")
 			//Pacific/Auckland
 			console.log(moment().tz("Pacific/Auckland").day());
 			
