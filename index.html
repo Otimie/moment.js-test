@@ -95,6 +95,8 @@ if(q.code) {
             redirect_uri: config.redirect_uri,
             code_verifier: localStorage.getItem("pkce_code_verifier")
         }, function(request, body) {
+            
+            console.log(body);
 
             // Initialize your application now that you have an access token.
             // Here we just display it in the browser.
